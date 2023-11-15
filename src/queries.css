@@ -99,12 +99,31 @@
 
 @media (max-width: 390px) {
   .card-container {
-    width: 43rem;
+    width: 40rem;
     margin-left: 2.3rem;
   }
 
   .button-more {
     margin-left: 14.2rem;
     /* font-weight: bold; */
+  }
+}
+
+@media (max-width: 360px) {
+  .search {
+    padding: 1.2rem 1.4rem;
+    margin-top: 1.2rem;
+
+    width: 13.4rem;
+    height: 40px;
+  }
+
+  .main-nav .menu {
+    margin-top: 0.5rem;
+  }
+
+  .card-container {
+    width: 39rem;
+    margin-left: 2.2rem;
   }
 }
