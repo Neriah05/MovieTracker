@@ -96,3 +96,15 @@
     display: none;
   }
 }
+
+@media (max-width: 390px) {
+  .card-container {
+    width: 43rem;
+    margin-left: 2.3rem;
+  }
+
+  .button-more {
+    margin-left: 14.2rem;
+    /* font-weight: bold; */
+  }
+}

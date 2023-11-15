@@ -127,7 +127,7 @@ body {
 
 .movie-list {
   display: flex;
-  flex-wrap: wrap; /* Allow images to wrap to the next row */
+  flex-wrap: wrap;
   gap: 3rem;
   margin-bottom: 3rem;
 }
@@ -139,7 +139,8 @@ body {
   padding: 0;
   position: relative;
 
-  width: 19.7rem;
+  flex-basis: 19.7rem;
+  flex-grow: 1;
   height: 28.7rem;
   border-radius: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -241,6 +242,7 @@ body {
 .image-container img {
   /* overflow: hidden; */
   height: 200px;
+
   background-size: cover;
   margin-bottom: 1.8rem;
 }
