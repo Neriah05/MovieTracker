@@ -63,14 +63,6 @@
 /**************************/
 
 @media (max-width: 44em) {
-  .container {
-    /* 1140px */
-    max-width: 115rem;
-  }
-
-  .movie-wrapper {
-    flex-basis: calc(50% - 3rem); /* Adjust the width and gap as needed */
-  }
 }
 
 /**************************/
@@ -98,5 +90,13 @@
 @media (max-width: 27em) {
   .search-button {
     display: none;
+  }
+
+  .movie-list {
+    margin-left: 2rem;
+  }
+
+  .search {
+    margin-top: 0.8rem;
   }
 }
