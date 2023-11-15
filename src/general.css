@@ -74,6 +74,7 @@ body {
 
   background-color: #17171a;
   color: #fff;
+  padding-top: 9.6rem;
 
   /* Only works if there is nothing absolutely positioned in relation to body */
 }
@@ -111,13 +112,6 @@ body {
   background-color: #ec71ff; /* Color of the line */
 }
 
-.movie-list {
-  display: flex;
-  flex-wrap: wrap; /* Allow images to wrap to the next row */
-  gap: 3rem;
-  margin-bottom: 3rem;
-}
-
 .movie-type {
   position: absolute;
   top: 0;
@@ -129,6 +123,13 @@ body {
   /* background-color: #17171a; */
 
   font-size: 1.4rem;
+}
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap; /* Allow images to wrap to the next row */
+  gap: 3rem;
+  margin-bottom: 3rem;
 }
 
 .movie-wrapper {

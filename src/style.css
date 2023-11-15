@@ -9,16 +9,21 @@ header {
   background-color: #232326;
 
   /* Because we want header to be sticky later */
-  height: 9.6rem;
-  padding: 0 3.2rem;
+  /* height: 9.6rem; */
+  padding: 2.2rem 3.2rem;
   margin: 0 auto;
-  position: relative;
+
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  top: 0;
 }
 
 .movie-logo {
   font-size: 2.2rem;
   font-weight: 600;
   color: #ec71ff;
+  text-decoration: none;
 }
 
 .logo-nav {
@@ -30,8 +35,13 @@ header {
 /**************************/
 /* NAVIGATION */
 /**************************/
+.active {
+  background-color: #d944f0;
+  padding: 1.2rem 1.6rem;
+  border-radius: 9px;
+}
 
-.main-nav-list {
+.main-nav ul {
   list-style: none;
   display: flex;
   align-items: center;
@@ -48,22 +58,30 @@ header {
   transition: all 0.3s;
 }
 
-.main-nav-link:hover,
-.main-nav-link:active {
+.main-nav-link:not(.active):hover,
+.main-nav-link:not(.active):active {
   color: #d944f0;
 }
 
-.main-nav-link.nav-cta:link,
-.main-nav-link.nav-cta:visited {
-  padding: 1.2rem 2.4rem;
-  border-radius: 9px;
-  color: #fff;
+/* MOBILE NAVIGATION */
+.main-nav .menu {
+  position: absolute;
+  top: 3.8rem;
+  left: 15.8rem;
+
   background-color: #17171a;
+  padding: 1.2rem 1.6rem;
+  border-radius: 9px;
+  font-weight: 500;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  display: none;
 }
 
-.main-nav-link.nav-cta:hover,
-.main-nav-link.nav-cta:active {
-  background-color: #490853;
+.main-nav .menu:hover {
+  background-color: #d944f0;
 }
 
 /**************************/
