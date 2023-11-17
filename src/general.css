@@ -139,8 +139,7 @@ body {
   padding: 0;
   position: relative;
 
-  flex-basis: 19.7rem;
-  flex-grow: 1;
+  width: 19.7rem;
   height: 28.7rem;
   border-radius: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);

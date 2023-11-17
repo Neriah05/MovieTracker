@@ -70,60 +70,274 @@
 }
 
 /**************************/
-/* BELOW 544px (Phones) */
+/* BELOW 390px (Phones) */
 /**************************/
 
-@media (max-width: 34em) {
-  .search-container {
-    gap: 2rem;
-  }
-
+@media (max-width: 390px) {
   .search {
-    padding: 1.2rem 1.4rem;
-    font-size: 1.8rem;
+    padding: 1.2rem 1.2rem;
+    font-size: 1.2rem;
     border-radius: 2rem;
-    width: 15.5rem;
-    height: 40px;
+    width: 13rem;
+    height: 30px;
+    transition: all 0.3s;
+    color: inherit;
+    background-color: #17171a;
   }
-}
 
-/**************************/
-/* BELOW 420px (Phones) */
-/**************************/
-
-@media (max-width: 27em) {
   .search-button {
+    padding: 1.2rem 1.2rem;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    /* font-weight: bold; */
+  }
+
+  .search-container {
+    gap: 1.2rem;
+    margin-top: 2.2rem;
+  }
+
+  .main-nav .menu {
+    position: absolute;
+    top: 3.8rem;
+    left: 15.8rem;
+
+    padding: 1.2rem 1.2rem;
+    border-radius: 4px;
+    font-weight: 200;
+    font-size: 1.2rem;
+
+    margin-top: 1.4rem;
+  }
+
+  .movie-wrapper {
+    width: calc(19.7rem * 0.95);
+    height: calc(28.7rem * 0.95);
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    margin-bottom: 4.5rem;
+  }
+
+  .card-container {
     display: none;
   }
 }
 
-@media (max-width: 390px) {
-  .card-container {
-    width: 40rem;
-    margin-left: 2.3rem;
-  }
+/**************************/
+/* BELOW 428px (Phones) */
+/**************************/
 
-  .button-more {
-    margin-left: 14.2rem;
-    /* font-weight: bold; */
-  }
-}
-
-@media (max-width: 360px) {
+@media (max-width: 428px) {
   .search {
-    padding: 1.2rem 1.4rem;
-    margin-top: 1.2rem;
+    padding: 1.2rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 2rem;
+    width: 11rem;
+    height: 25px;
+    transition: all 0.3s;
+    color: inherit;
+    background-color: #17171a;
 
-    width: 13.4rem;
-    height: 40px;
-  }
-
-  .main-nav .menu {
     margin-top: 0.5rem;
   }
 
+  .search-button {
+    padding: 1rem 1rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    /* font-weight: bold; */
+  }
+
+  .search-container {
+    gap: 1rem;
+    margin-top: 2.3rem;
+  }
+
+  .main-nav .menu {
+    position: absolute;
+    top: 3.8rem;
+    left: 14rem;
+
+    padding: 1.2rem 1.2rem;
+    border-radius: 4px;
+    font-weight: 200;
+    font-size: 1rem;
+
+    margin-top: 1.4rem;
+  }
+  .movie-wrapper {
+    width: calc(19.7rem * 1.07);
+    height: calc(28.7rem * 1.07);
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    margin-bottom: 4.5rem;
+  }
+
   .card-container {
-    width: 39rem;
-    margin-left: 2.2rem;
+    /* height: calc(45rem * 0.7);
+    width: calc(29rem * 0.7);
+    overflow: hidden;
+    position: absolute;
+    top: -40px;
+    right: -18px;
+    left: -20px;
+    transition: 0.4s;
+    animation: ease-in;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 3;
+    background-color: #232326;
+    overflow-y: scroll;
+    border-radius: 15px; */
+
+    display: none;
+  }
+}
+
+/**************************/
+/* BELOW 390px (Phones) */
+/**************************/
+
+@media (max-width: 390px) {
+  .search {
+    padding: 1.2rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 2rem;
+    width: 11rem;
+    height: 25px;
+    transition: all 0.3s;
+    color: inherit;
+    background-color: #17171a;
+
+    margin-top: 0.5rem;
+  }
+
+  .search-button {
+    padding: 1rem 1rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    /* font-weight: bold; */
+  }
+
+  .search-container {
+    gap: 1rem;
+    margin-top: 2.3rem;
+  }
+
+  .main-nav .menu {
+    position: absolute;
+    top: 3.8rem;
+    left: 14rem;
+
+    padding: 1.2rem 1.2rem;
+    border-radius: 4px;
+    font-weight: 200;
+    font-size: 1rem;
+
+    margin-top: 1.4rem;
+  }
+
+  .movie-wrapper {
+    width: calc(19.7rem * 0.96); /* Increase by 2% */
+    height: calc(28.7rem * 0.96); /* Increase by 2% */
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    margin-bottom: 4.5rem;
+  }
+
+  .card-container {
+    /* height: calc(45rem * 0.7);
+    width: calc(29rem * 0.7);
+    overflow: hidden;
+    position: absolute;
+    top: -40px;
+    right: -18px;
+    left: -20px;
+    transition: 0.4s;
+    animation: ease-in;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 3;
+    background-color: #232326;
+    overflow-y: scroll;
+    border-radius: 15px; */
+
+    display: none;
+  }
+}
+
+/**************************/
+/* BELOW 360px (Phones) */
+/**************************/
+
+@media (max-width: 360px) {
+  .search {
+    padding: 1.2rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 2rem;
+    width: 11rem;
+    height: 25px;
+    transition: all 0.3s;
+    color: inherit;
+    background-color: #17171a;
+
+    margin-top: 0.5rem;
+  }
+
+  .search-button {
+    padding: 1rem 1rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    /* font-weight: bold; */
+  }
+
+  .search-container {
+    gap: 1rem;
+    margin-top: 2.3rem;
+  }
+
+  .main-nav .menu {
+    position: absolute;
+    top: 3.8rem;
+    left: 14rem;
+
+    padding: 1.2rem 1.2rem;
+    border-radius: 4px;
+    font-weight: 200;
+    font-size: 1rem;
+
+    margin-top: 1.4rem;
+  }
+
+  .movie-wrapper {
+    width: calc(19.7rem * 0.9);
+    height: calc(28.7rem * 0.9);
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    margin-bottom: 4.5rem;
+  }
+
+  .card-container {
+    /* height: calc(45rem * 0.7);
+    width: calc(29rem * 0.7);
+    overflow: hidden;
+    position: absolute;
+    top: -40px;
+    right: -18px;
+    left: -20px;
+    transition: 0.4s;
+    animation: ease-in;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 3;
+    background-color: #232326;
+    overflow-y: scroll;
+    border-radius: 15px; */
+
+    display: none;
   }
 }
